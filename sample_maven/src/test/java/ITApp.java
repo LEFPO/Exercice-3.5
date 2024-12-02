@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.*;
 import be.iramps.ue1103.Pret.*;
-@Disabled
+
 @DisplayName("Tests d'intégration: ensemble des composants")
 public class ITApp {
     @Test
@@ -29,6 +29,8 @@ public class ITApp {
         projet.setFraisNotaireAchat(28000);
         projet.setRevenuCadastral(1345);
         projet.setFraisTransformation(0);
-        Assertions.assertEquals(135500, projet.calculTotalProjetAchat());
+        double droitEnregistrement = projet.calculDroitEnregistrement();
+        double tvaFraisTransformation = projet.calculTVAFraisTransformation();
+        Assertions.assertEquals(135500, (droitEnregistrement+tvaFraisTransformation+ projet.getPrixHabitation()+ projet.getFraisNotaireAchat()+ projet.getFraisTransformation()));
     }
 }

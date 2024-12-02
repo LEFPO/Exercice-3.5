@@ -1,5 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestProjet$calculTVAFraisTransformation
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s -- in TestProjet$calculTVAFraisTransformation
-TestProjet$calculTVAFraisTransformation.calculTVAFraisTransformationSimple -- Time elapsed: 0.006 s
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0 s -- in TestProjet$calculTVAFraisTransformation
+TestProjet$calculTVAFraisTransformation.calculTVAFraisTransformationArrondi skipped
+TestProjet$calculTVAFraisTransformation.calculTVAFraisTransformationSimple skipped
+TestProjet$calculTVAFraisTransformation.calculTVAFraisTransformationNegatif(double) skipped
